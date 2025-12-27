@@ -17,23 +17,24 @@ To write a Python program using Pandas to **join two DataFrames along rows** (ro
 ---
 
 ## 💻 Program
-
 ```
 import pandas as pd
-a=pd.DataFrame(eval(input()))
-b=pd.DataFrame(eval(input()))
+a=eval(input())
+b=eval(input())
+df1=pd.DataFrame(a)
+df2=pd.DataFrame(b)
 print("Original DataFrames:")
-print(a)
+print(df1)
 print("-------------------------------------")
-print(b)
+print(df2)
 print()
-print("Join the said two dataframes along columns:")
-c=pd.concat([a,b],axis=1)
-print(c)
+mer=pd.concat([df1,df2])
+print("Join the said two dataframes along rows:")
+print(mer)
 ```
 
 ## Output
-![image](https://github.com/user-attachments/assets/051c858b-cd5d-4904-b839-aea58ed29616)
+![439329798-26df033a-9708-4c01-8739-4d60e35497e9](https://github.com/user-attachments/assets/8f6dcb91-591e-4f57-845b-00803779e5fc)
 
 ## Result
-Thus,the program executed sucessfully
+Thus,the program has been executed successfully.
